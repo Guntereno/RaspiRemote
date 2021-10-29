@@ -90,15 +90,9 @@ class RaspiRemoteServer(BaseHTTPRequestHandler):
             self.send_response(404)
 
     def send_file(self, path):
-        print("----")
-        print(path)
         path = relpath(path, "/")
-        print(path)
         path = os.path.join(public_path, path)
-        print(path)
         path = os.path.realpath(path)
-        print(path)
-        print("----")
 
         if not os.path.exists(path):
             print(f"Failed to find file '{path}'")
