@@ -1,0 +1,41 @@
+:root {
+    --dark-jungle-green: rgba(0, 18, 11, 1);
+    --dark-slate-gray: rgba(53, 96, 90, 1);
+    --slate-gray: rgba(107, 129, 140, 1);
+    --white: rgba(255, 255, 255, 1);
+    --medium-spring-green: rgba(49, 233, 129, 1);
+    --gradient-top: linear-gradient(0deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-right: linear-gradient(90deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-bottom: linear-gradient(180deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-left: linear-gradient(270deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-top-right: linear-gradient(45deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-bottom-right: linear-gradient(135deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-top-left: linear-gradient(225deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-bottom-left: linear-gradient(315deg, #00120bff, #35605aff, #6b818cff, #d8e4ffff, #31e981ff);
+    --gradient-radial: radial-gradient(#00120bff, rgb(74, 87, 85), #6b818cff, #d8e4ffff, #31e981ff);
+    --color-background: var(--dark-jungle-green);
+    --color-raised-background: var(--dark-slate-gray);
+    --color-text: var(--white);
+    --color-text-dim: var(--slate-gray);
+    --color-highlight: var(--medium-spring-green);
+}
+
+body {
+    background-color: var(--color-background);
+    border-radius: 3px;
+}
+
+ input[type=button] {
+    background-color: var(--color-raised-background);
+    color: var(--color-text);
+    text-align: center;
+    font-size: 32px;
+    border-radius: 10px;
+    border: none;
+    padding: .5em;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
